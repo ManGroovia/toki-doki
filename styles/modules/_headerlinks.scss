@@ -1,0 +1,22 @@
+.links {
+  border: 1px solid;
+  background-color: #3a3c48;
+  color: #ffffff;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  .nav {
+    width: 80%;
+    margin: auto;
+    
+    
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li{
+        font-weight: bold;
+      }
+    }
+  }
+}
