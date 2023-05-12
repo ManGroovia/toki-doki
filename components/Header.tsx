@@ -1,6 +1,11 @@
+import Modal from "./Modal";
+import React from 'react'
 const Header = () => {
+  const [modalIsOpen, setModalIsOpen] = React.useState<boolean>(false);
+  const onCloseModal = () => setModalIsOpen(false);
   return (
     <div className="header">
+      <Modal active={modalIsOpen} onClose={onCloseModal}></Modal>
       <div className="right">
         <div className="logo">
           <img src="icons/logo.svg" alt="logo" />
@@ -18,7 +23,7 @@ const Header = () => {
       <div className="left">
         <div className="contact">
           <a href="#">8(383)2-555-007</a>
-          <li>Заказать звонок</li>
+          <li onClick={()=> setModalIsOpen(true)}>Заказать звонок</li>
         </div>
         <button className="topBtn">
         <img src="icons/dogovor.svg" alt="" />

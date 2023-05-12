@@ -1,0 +1,73 @@
+.modal {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal .modal-content {
+  background-color: #f5f7f9;
+  padding: 40px 40px;
+  width: 40%;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal .modal-content .modalBtn {
+  background-color: #dd392b;
+  color: #ffffff;
+  width: 200px;
+  border-radius: 30px;
+  border: none;
+  margin-top: 20px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.modal .modal-content .forms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal .modal-content .forms form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal .modal-content .forms form label {
+  font-weight: bold;
+}
+
+.modal .modal-content .forms form input::-webkit-outer-spin-button,
+.modal .modal-content .forms form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.modal .modal-content .forms form input {
+  width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  border: none;
+  color: #81828f;
+  outline: none;
+}
+
+.modal .modal-content .text p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.modal .modal-content .text h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
