@@ -33,22 +33,14 @@
       flex-direction: column;
         margin-right: 100px;
       width: 200px;
-
+      li{
+        width: 130px;
+      }
       a {
         font-size: 18px;
         font-weight: 700;
       }
-      li {
-        color: #dd392b;
-        border-bottom: 1px solid #dd392b;
-        white-space: nowrap;
-        width: 130px;
-        margin-left: 40px;
-        margin-top: 5px;
-        font-weight: 500;
-        font-size: 15px;
-        cursor: pointer;
-      }
+      
     }
   }
   .right {
@@ -75,16 +67,7 @@
         font-weight: 400;
         font-size: 15px;
       }
-      li {
-        margin-top: 10px;
-        color: #dd392b;
-        border-bottom: 1px solid #dd392b;
-        width: 155px;
-        font-weight: 500;
-        font-size: 15px;
-        cursor: pointer;
-        white-space: nowrap;
-      }
+      
     }
   }
 }
