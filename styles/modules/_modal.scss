@@ -10,6 +10,8 @@
   justify-content: center;
 
   
+  
+  
   .modal-content {
     background-color: #f5f7f9;
     padding: 40px 40px;
@@ -27,6 +29,12 @@
       margin-top: 20px;
       padding: 20px;
       cursor: pointer;
+      font-size: 15px;
+      &:hover{
+        transition: all 0.5s;
+        background-color: rgb(14, 182, 14);
+        
+      }
     }
     .forms {
       display: flex;

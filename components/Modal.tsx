@@ -8,6 +8,7 @@ interface IModalProps {
 const Modal = ({ active, onClose }: PropsWithChildren<IModalProps>) => {
   return (
     <div className={`modal ${active ? "active" : ""}`} onClick={onClose}>
+      
       <div
         className={"modal-content"}
         onClick={(event) => event.stopPropagation()}
