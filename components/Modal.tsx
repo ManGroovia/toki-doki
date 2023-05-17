@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from "react";
-
+import { RedBtn } from "./atoms/Buttons";
 interface IModalProps {
   active: boolean;
   onClose: () => void;
@@ -35,7 +35,8 @@ const Modal = ({ active, onClose }: PropsWithChildren<IModalProps>) => {
             />
           </form>
         </div>
-        <button className="modalBtn">Заказать</button>
+        <RedBtn>Заказать звонок</RedBtn>
+        
       </div>
     </div>
   );
