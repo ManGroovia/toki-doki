@@ -7,16 +7,15 @@
   align-items: center;
   margin-top: 50px;
   .nav {
-    width: 80%;
+    width: 60%;
     margin: auto;
-    
+   
     
     ul {
       display: flex;
       justify-content: space-between;
       li{
         font-weight: bold;
-        cursor: pointer;
       }
     }
   }

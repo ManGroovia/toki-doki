@@ -41,3 +41,11 @@ container {
   max-width: 1440px;
   margin: 0 auto;
 }
+.main{
+  padding: 10px;
+  display: flex;
+  // border: 1px solid blueviolet;
+  width: 63%;
+  margin: auto;
+  justify-content: space-between;
+}
