@@ -1,5 +1,6 @@
 import React from "react";
 import { RedBtn } from "./atoms/Buttons";
+
 const SearchForm = () => {
   return (
     <>
@@ -43,7 +44,7 @@ const SearchForm = () => {
           <div className="left">
             <label htmlFor="filterCar">Год выпуска:</label>
             <div className="inputs">
-              <input type="number" min={0.1} max={10} placeholder="Мин" />
+              <input type="number" min={1900} max={2023} placeholder="Мин" />
               -
               <input type="number" min={1900} max={2023} placeholder="Макс" />
             </div>
