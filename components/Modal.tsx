@@ -1,5 +1,7 @@
 import React, { PropsWithChildren } from "react";
 import { RedBtn } from "./atoms/Buttons";
+
+
 interface IModalProps {
   active: boolean;
   onClose: () => void;
@@ -8,7 +10,6 @@ interface IModalProps {
 const Modal = ({ active, onClose }: PropsWithChildren<IModalProps>) => {
   return (
     <div className={`modal ${active ? "active" : ""}`} onClick={onClose}>
-      
       <div
         className={"modal-content"}
         onClick={(event) => event.stopPropagation()}
