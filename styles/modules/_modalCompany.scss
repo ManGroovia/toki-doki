@@ -1,24 +1,12 @@
-// .oNas {
-//   position: absolute;
-//   background-color: #3a3c48;
-//   font-size: 15px;
-//   color: #ffffff;
-//   left: 0;
-//   top: 0;
-//   width: 310px;
-//   height: 320px;
-//   .links {
-//     display: flex;
-//     flex-direction: row;
-//   }
-// }
-
 .modalCompany {
   position: fixed;
   width: 100%;
   height: 100%;
-  top: 250px;
-  left: 250px;
+
+  z-index: 1000;
+  left: 0;
+  top: 0;
+ 
   
   .oNas {
     width: 310px;
@@ -29,7 +17,9 @@
     background-color: #3a3c48;
     color: #ffffff;
     border-radius: 17px;
-    z-index: 5;
+
+    top: 250px;
+    left: 250px;
 
     .ssylky {
       display: flex;
@@ -37,14 +27,14 @@
       padding: 10px;
       margin-top: 5px;
       font-weight: bold;
-
-      li {
-        cursor: pointer;
-        &:hover {
-          transition: all 0.5s;
-          color: red;
-        }
+      cursor: pointer;
+      
+      &:hover {
+        transition: all 0.5s;
+        color: red;
+        
       }
+      
     }
   }
 }

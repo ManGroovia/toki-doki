@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import React, { PropsWithChildren, useRef } from "react";
 
 interface IModalProps {
   active: boolean;
@@ -6,9 +6,15 @@ interface IModalProps {
 }
 
 const ModalCompany = ({ active, onClose }: PropsWithChildren<IModalProps>) => {
+  if (!active) {
+    return null;
+  }
   return (
-    <div className="modalCompany" onClick={onClose}>
-      <div className="oNas" onClick={(event) => event.stopPropagation()}>
+    <div
+      className={active ? "modalCompany active" : "modalCompany"}
+      onClick={onClose}
+    >
+      <div className="oNas" onClick={(Event) => Event.stopPropagation()}>
         <div className="ssylky">
           <li>О компании</li>
           <img src="icons/Vector.svg" alt="" />
