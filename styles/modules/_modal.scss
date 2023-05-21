@@ -8,54 +8,68 @@
   display: flex;
   align-items: center;
   justify-content: center;
-z-index: 100;
-  
-  .modal-content {
-    background-color: #f5f7f9;
-    padding: 40px 40px;
-    width: 40%;
-    border-radius: 14px;
-    display: flex;
-    flex-direction: column;
+  z-index: 100;
+  opacity: 0;
+  animation: modalFadeIn 0.3s forwards;
+}
 
-    // 
-    .forms {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      form {
-        label {
-          font-weight: bold;
-        }
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-          -webkit-appearance: none;
-          margin: 0;
-        }
-        input {
-          width: 300px;
-          padding: 20px;
-          border-radius: 12px;
-          border: none;
-          color: #81828f;
-          outline: none;
-          font-size: 16px;
-        }
-      }
-    }
-    .text {
-      p {
-        font-size: 14px;
-        font-weight: 400;
-        margin-top: 10px;
-      }
-      h3 {
-        font-size: 30px;
-        font-weight: bold;
-      }
-    }
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background-color: #f5f7f9;
+  padding: 40px 40px;
+  width: 40%;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.forms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.forms form {
+  label {
+    font-weight: bold;
+  }
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.forms form input::-webkit-outer-spin-button,
+.forms form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.forms form input {
+  width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  border: none;
+  color: #81828f;
+  outline: none;
+  font-size: 16px;
+}
+
+.text {
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  h3 {
+    font-size: 30px;
+    font-weight: bold;
   }
 }
