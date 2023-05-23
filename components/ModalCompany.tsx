@@ -1,4 +1,6 @@
 import React, { PropsWithChildren, useRef } from "react";
+import { RightArrow } from "./atoms/Icons";
+
 interface IModalProps {
   active: boolean;
   onClose: () => void;
@@ -15,95 +17,37 @@ const ModalCompany = ({ active, onClose }: PropsWithChildren<IModalProps>) => {
     >
       <div className="oNas" onClick={(event) => event.stopPropagation()}>
         <div className="ssylky">
-          <li>О компании</li>
-          <svg
-            width="7"
-            height="10"
-            viewBox="0 0 7 10"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M1 9L5 5L1 1" stroke="#D2D3D8" strokeWidth="1.5" />
-          </svg>
+          <div className="modal-link">О компании</div>
+          <RightArrow></RightArrow>
         </div>
         <div className="ssylky">
-          <li>Наши сотрудники</li>
-          <img src="icons/Vector.svg" alt="" />
+          <div className="modal-link"> Наши сотрудники</div>
+          <RightArrow></RightArrow>
         </div>
         <div className="ssylky">
-          <li>Автопарк Токидоки</li>
-          <img src="icons/Vector.svg" alt="" />
+          <div className="modal-link"> Автопарк Токидоки</div>
+          <RightArrow></RightArrow>
         </div>
         <div className="ssylky">
-          <li>Офис Токидоки</li>
-          <img src="icons/Vector.svg" alt="" />
+          <div className="modal-link"> Офис Токидоки</div>
+          <RightArrow></RightArrow>
         </div>
         <div className="ssylky">
-          <li>Агентский договор</li>
-          <img src="icons/Vector.svg" alt="" />
+          <div className="modal-link"> Агентский договор</div>
+          <RightArrow></RightArrow>
         </div>
         <div className="ssylky">
-          <li>Учредительные документы</li>
-          <img src="icons/Vector.svg" alt="" />
+          <div className="modal-link">Учредительные документы</div>
+          <RightArrow></RightArrow>
         </div>
         <div className="ssylky">
-          <li>Видео</li>
-          <img src="icons/Vector.svg" alt="" />
+          <div className="modal-link">Видео</div>
+          <RightArrow></RightArrow>
         </div>
+        
       </div>
     </div>
   );
 };
 
 export default ModalCompany;
-// interface IModalProps {
-//   active: boolean;
-//   onClose: () => void;
-// }
-
-// const ModalCompany = ({ active, onClose }: PropsWithChildren<IModalProps>) => {
-//   if (!active) {
-//     return null;
-//   }
-//   return (
-//     <div
-//       className={active ? "modalCompany active" : "modalCompany"}
-//       onClick={onClose}
-//     >
-//       <div className="oNas" onClick={(Event) => Event.stopPropagation()}>
-//         <div className="ssylky">
-//           <li>О компании</li>
-//           <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-// <path d="M1 9L5 5L1 1" stroke="#D2D3D8" stroke-width="1.5"/>
-// </svg>
-//         </div>
-//         <div className="ssylky">
-//           <li>Наши сотрудники</li>
-//           <img src="icons/Vector.svg" alt="" />
-//         </div>
-//         <div className="ssylky">
-//           <li>Автопарк Токидоки</li>
-//           <img src="icons/Vector.svg" alt="" />
-//         </div>
-//         <div className="ssylky">
-//           <li>Офис Токидоки</li>
-//           <img src="icons/Vector.svg" alt="" />
-//         </div>
-//         <div className="ssylky">
-//           <li>Агентский договор</li>
-//           <img src="icons/Vector.svg" alt="" />
-//         </div>
-//         <div className="ssylky">
-//           <li>Учредительные документы</li>
-//           <img src="icons/Vector.svg" alt="" />
-//         </div>
-//         <div className="ssylky">
-//           <li>Видео</li>
-//           <img src="icons/Vector.svg" alt="" />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ModalCompany;
