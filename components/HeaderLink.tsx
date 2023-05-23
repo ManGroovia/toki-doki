@@ -1,6 +1,6 @@
 import React from "react";
 import ModalCompany from "./ModalCompany";
-import { useAutoAnimate } from "@formkit/auto-animate/react";
+
 const HeaderLink = () => {
   
   const [modalIsOpen, setModalIsOpen] = React.useState<boolean>(false);

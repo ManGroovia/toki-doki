@@ -18,6 +18,10 @@
       li{
         font-weight: 500;
         cursor: pointer;
+        &:hover{
+          color: red;
+          transition: all 0.3s;
+        }
       }
     }
   }

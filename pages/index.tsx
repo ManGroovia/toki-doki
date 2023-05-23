@@ -5,8 +5,9 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Slider from '@/components/Slider';
 import SearchForm from '@/components/Searchform';
 import React from 'react'
+import UserForm from '@/components/UserForm';
 const MainPage = () => {
-  
+
   return (
     <>
       <Header></Header>
@@ -20,6 +21,7 @@ const MainPage = () => {
           <SearchForm></SearchForm>
         </div>
       </div>
+      <UserForm></UserForm>
     </>
   );
 };
