@@ -17,7 +17,7 @@ const ModalCompany = ({ active, onClose }: PropsWithChildren<IModalProps>) => {
     >
       <div className="oNas" onClick={(event) => event.stopPropagation()}>
         <div className="ssylky">
-          <div className="modal-link">О компании</div>
+          <div className="modal-link"> О компании</div>
           <RightArrow></RightArrow>
         </div>
         <div className="ssylky">
@@ -44,7 +44,6 @@ const ModalCompany = ({ active, onClose }: PropsWithChildren<IModalProps>) => {
           <div className="modal-link">Видео</div>
           <RightArrow></RightArrow>
         </div>
-        
       </div>
     </div>
   );
